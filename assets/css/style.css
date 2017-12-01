@@ -1,0 +1,21 @@
+
+	.navbar {
+		background-color: #2b3f66;
+	}
+
+	.screen{
+	width:380px !important;
+	}
+	
+	.progressS1, .S1{
+	width:100%;height:100%;
+	}
+	
+	.progressS2, .S1{
+	width:100%;height:90%;
+	}
+	
+	.img-circle{
+	height:40px;
+	}
+	

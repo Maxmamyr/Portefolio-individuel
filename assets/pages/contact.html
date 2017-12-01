@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>FIFANDRAISANA</title>
+
+    <!-- Font Awesome -->
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Material Design Bootstrap -->
+    <link href="../../assets/css/mdb.min.css" rel="stylesheet">
+
+    <link href="../../assets/css/style_contact.css" rel="stylesheet">
+
+	<link href="../../assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!--Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+            <div class="container">
+                <a class="navbar-brand" href="#">PORTEFOLIO</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="../../index.html">Fandraisana<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../assets/pages/apropos.html">Ny Momba ahy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../assets/pages/contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item btn-group">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Project 
+                            </a>
+                            <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="../../assets/pages/calc.html">Fikajiana</a>
+                                <a class="dropdown-item" href="../../assets/pages/random.html">Kosoka</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    <!--/.Navbar-->
+	<br/><br/><br/><br/><br/>
+<section id="contact" class="container">
+	<div class="row">
+	   <div class="col-md-7" id="find">
+            <br/>
+            <div class="row">
+             <h3>Tsy lavitra ny misy anay</h3>   
+            </div>
+		   	 <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'>
+			 </script>
+			 <div style='overflow:hidden;height:365px;width:100%;'>
+				 <div id='gmap_canvas' style='height:365px;width:100%;'>
+				 </div>
+				 <style>#gmap_canvas img{max-width:none!important;background:none!important}
+				 </style>
+			 </div>
+			 <div class="row">
+				 <div class="col-md-6">
+					<h4><strong>Tambazotra sosialy :</strong></h4>
+					</div>
+					<div class="col-md-6 pull-left">
+						<a href="#">
+							<img class="img-circle" src="../../assets/img/galleries/logo/01.gif">
+						</a>
+						<a href="#">
+						  <img class="img-circle" src="../../assets/img/galleries/logo/02.png">
+						</a>
+						<a href="#">
+						  <img class="img-circle" src="../../assets/img/galleries/logo/03.png">
+						<a href="#">
+						  <img class="img-circle" src="../../assets/img/galleries/logo/04.png">
+						</a>
+					</div>
+			</div>
+		</div>
+       <div class="col-md-5">
+      	  <br/>
+          <h3><strong>Misy ambara</strong></h3>
+        <form>
+          <div class="form-group">
+            <input type="text" class="form-control" name="" value="" placeholder="Anarana">
+          </div>
+          <div class="form-group">
+            <input type="email" class="form-control" name="" value="" placeholder="E-mail">
+          </div>
+          <div class="form-group">
+            <input type="tel" class="form-control" name="" value="" placeholder="Finday">
+          </div>
+          <div class="form-group">
+            <textarea style='height:150px;' class="form-control" name="" rows="3" placeholder="Hafatra na tsikera..."></textarea>
+          </div>
+          <button class="btn btn-info pull-right" type="submit" name="button">
+              <i class="fa fa-paper-plane-o" aria-hidden="true"></i> Alefa
+          </button>
+        </form>
+      </div>
+    </div>
+</section>
+
+    <!-- SCRIPTS -->
+<script type='text/javascript'>
+	function init_map(){
+		var myOptions = {zoom:10,center:new google.maps.LatLng(-18.9859782,47.53272100000004),mapTypeId: google.maps.MapTypeId.HYBRID
+		};
+		map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
+		marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(-18.9859782,47.53272100000004)});
+		infowindow = new google.maps.InfoWindow({content:'<strong>Mamy</strong><br>Akamasoa, Antananarivo<br>'});
+		google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});
+		infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);
+</script>
+    <!-- JQuery -->
+    <script type="text/javascript" src="../../assets/js/jquery-3.1.1.min.js"></script>
+
+    <!-- Bootstrap dropdown -->
+    <script type="text/javascript" src="../../assets/js/popper.min.js"></script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="../../assets/js/bootstrap.min.js"></script>
+
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="../../assets/js/mdb.min.js"></script>
+
+    <script>
+    new WOW().init();
+    </script>
+
+</body>
+
+</html>
+
+
+ 

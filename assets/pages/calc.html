@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>FIKAJIANA</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Material Design Bootstrap -->
+    <link href="../../assets/css/mdb.min.css" rel="stylesheet">
+
+	<link href="../../assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!--Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+            <div class="container">
+                <a class="navbar-brand" href="#">PORTEFOLIO</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="../../index.html">Fandraisana<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../assets/pages/apropos.html">Ny Momba ahy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../assets/pages/contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item btn-group">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Project 
+                            </a>
+                            <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="../../assets/pages/calc.html">Fikajiana</a>
+                                <a class="dropdown-item" href="../../assets/pages/random.html">Kosoka</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    <!--/.Navbar-->
+<br/><br/><br/><br/><br/>
+	<div class="container">
+		<legend>My calculator</legend>
+		<form name="screen" class="row">
+			<input class="ecran" name="screenContent" id="screenContent" value="" disabled>
+		</form> 
+		<div class="row">
+			<div class="">
+			<button type="button" value="-" class="btn btn-info btn-lg " onclick="fctMoins()">-</button>
+			</div>
+			<div class="">
+			<button type="button" value="+" class="btn btn-primary btn-lg" onclick="fctPlus()">+</button>
+			</button>
+			</div>
+			<div class="">
+			<button type="button" value="x" class="btn btn-danger btn-lg" onclick="fctFois()">x</button>
+			</div>
+			<div class="">
+			<button type="button" value="/" class="btn btn-warning btn-lg " onclick="fctDivision()">/</button>
+			</div>
+		</div>
+		<div class="row">
+			<div class="">
+			<button type="button" value="1" class="btn btn btn-lg" onclick="fct1()">1</button>
+			</div>
+			<div class="">
+			<button type="button" value="3" class="btn btn btn-lg" onclick="fct3()">2</button>
+			</div>
+			<div class="">
+			<button type="button" value="3" class="btn btn btn-lg" onclick="fct3()">3</button>
+			</div>
+			<div class="">
+			<button type="button" value="4" class="btn btn btn-lg" onclick="fct4()">4</button>
+			</div>
+		</div>
+		<div class="row">
+			<div class=" ">
+			<button type="button" value="5" class="btn btn btn-lg" onclick="fct5()">5</button>
+			</div>
+			<div class="">
+			<button type="button" value="6" class="btn btn btn-lg" onclick="fct6()">6</button>
+			</div>
+			<div class="">
+			<button type="button" value="7" class="btn btn btn-lg" onclick="fct7()">7</button>
+			</div>
+			<div class="">
+			<button type="button" value="8" class="btn btn btn-lg" onclick="fct8()">8</button>
+			</div>
+		</div>
+		<div class="row">
+			<div class=" ">
+			<button type="button" value="9"class="btn btn btn-lg" onclick="fct9()">9</button>
+			</div>
+			<div class="">
+			<button type="button" value="0" class="btn btn btn-lg"  onclick="fct0()">0</button>
+			</div>
+			<div class="">
+			<button type="button" value="C" class="btn btn btn-lg"  onclick="fctClear()">C</button>
+			</div>
+			<div class="">
+			<button type="button" value="=" class="btn btn-success btn-lg"  onclick="fctEgal()">=</button>
+			</div>
+		</div>
+	</div>
+	
+    <!-- SCRIPTS -->
+	<script type="text/javascript" src="../../assets/js/app_calc.js"></script>
+    <!-- JQuery -->
+    <script type="text/javascript" src="../../assets/js/jquery-3.1.1.min.js"></script>
+
+    <!-- Bootstrap dropdown -->
+    <script type="text/javascript" src="../../assets/js/popper.min.js"></script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="../../assets/js/bootstrap.min.js"></script>
+
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="../../assets/js/mdb.min.js"></script>
+
+    <script>
+    new WOW().init();
+    </script>
+
+</body>
+
+</html>
+
